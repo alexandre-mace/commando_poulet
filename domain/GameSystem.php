@@ -93,9 +93,11 @@ class GameSystem
     }
     public function enemyDied(Player $player, Monster $monster)
     {
+        $player->setLastEnemy($player->getEnemy());
         if ($monster->getNumber() < 5) {
-            $player->setLastEnemy($player->getEnemy());
             $player->setEnemy(new \App\Entity\Monster(\Domain\Monster::MONSTERS[$monster->getNumber() + 1]));
+        } elseif ($monster->getNumber() === 5) {
+            $player->setHasWin(true);
         }
     }
 }

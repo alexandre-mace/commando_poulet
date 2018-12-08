@@ -1,59 +1,61 @@
 {% extends 'base.html.twig' %}
 
 {% block content %}
-    {% if player.action is same as(constant('Domain\\Action::LEAVE')) %}
-        <p class="flex-center">Sale lâche !</p>
+    {% if player.action is same as(constant('Domain\\Action::LEAVE')) or player.hasStartedGame is not same as(true) %}
+        <p class="flex-center leave">Sale lâche !</p>
+        <a href="{{ path('homepage') }}">Rejouer</a>
     {% else %}
-        <p class="text_animation form_title tour">Tour n°{{ player.round }}</p>
         {% if player.hasStartedGame %}
+            <p id="tour" class="text1 form_title">Tour n°{{ player.round }}</p>
             {% if player.round is same as(1) %}
-                <p class="text_animation">Génial, commençons avec le premier monstre, {{ player.enemy.name }} !</p>
+                <p class="text1">Génial, commençons avec le premier monstre, {{ player.enemy.name }} !</p>
             {% endif %}
 
             {% if player.action is not null %}
                 {% if player.action is same as(constant('Domain\\Action::ATTACK')) %}
-                    <p class="text_animation">{{ random(player.role.attackNames) }}</p>
-                    <p class="text1">{{ player.enemy.name }} perd {{ player.lastDamage }} points de vie !</p>
+                    <p class="text1">{{ random(player.role.attackNames) }}</p>
+                    <p class="text2">{{ player.enemy.name }} perd {{ player.lastDamage }} points de vie !</p>
                 {% elseif player.action is same as(constant('Domain\\Action::UPGRADE')) %}
-                    <p class="text_animation">Vos dégats augmentent de {{ player.lastBonus }} points. </p>
+                    <p class="text1">Vos dégats augmentent de {{ player.lastBonus }} points. </p>
                 {% elseif player.action is same as(constant('Domain\\Action::HEAL')) %}
-                    <p class="text_animation">Votre vie augmente de {{ player.lastHeal }} points.</p>
+                    <p class="text1">Votre vie augmente de {{ player.lastHeal }} points.</p>
                 {% endif %}
 
-                {% if player.hasSlainEnemy %}
-                    {% if player.lastEnemy.number is same as(5) %}
-                        <p class="text1"></br>Vous venez de terasser le commando le plus puissant du monde..</p>
-                        <p class="text1_5">Vous n\'avez plus rien a envier à la Montagne de Game of Thrones...</p>
-                        <p class="text2">Proclamez-vous maître du monde et faites ce que vous voulez de ces humains !</p>
-                        <p class="text2_5">AMEN</p>';
-                        <a class="text3" href="{{ path('homepage') }}">Rejouer</a>';
-                    {% else %}
-                        <p class="text1">Vous avez battu {{ player.lastEnemy.name }}, faites maintenant face à {{ player.enemy.name }}</p>
+
+                {% if player.lastEnemy.number is same as(5) %}
+                    <p class="text2"></br>Vous venez de terasser le commando le plus puissant du monde..</p>
+                    <p class="text3">Vous n'avez plus rien a envier à la Montagne de Game of Thrones...</p>
+                    <p class="text4">Proclamez-vous maître du monde et faites ce que vous voulez de ces humains !</p>
+                    <p class="text5">AMEN</p>
+                    <a class="text6" href="{{ path('homepage') }}">Rejouer</a>'
+                {% else %}
+                    {% if player.hasSlainEnemy and player.lastEnemy.number is not same as(5) %}
+                        <p class="text2">Vous avez battu {{ player.lastEnemy.name }}, faites maintenant face à {{ player.enemy.name }}</p>
                     {% endif %}
-                {% endif %}
 
-                <p class="text1">{{ player.enemy.name }} a encore {{ player.enemy.lifePoints }} points de vie.</p>
+                    <p class="text2">{{ player.enemy.name }} a encore {{ player.enemy.lifePoints }} points de vie.</p>
 
-                {% if player.enemy.number is same as(5) %}
-                    </br><p class="text1_5">{{ random(player.enemy.attackNames) }}</p>
-                {% else %}
-                    </br><p class="text1_5">{{ player.enemy.name }} riposte !</p>
-                {% endif %}
+                    {% if player.enemy.number is same as(5) %}
+                        </br><p class="text3">{{ random(player.enemy.attackNames) }}</p>
+                    {% else %}
+                        </br><p class="text3">{{ player.enemy.name }} riposte !</p>
+                    {% endif %}
 
-                <p class="text1_5">Vous perdez {{ player.enemy.lastDamage }} points de vie !</p>
+                    <p class="text3">Vous perdez {{ player.enemy.lastDamage }} points de vie !</p>
 
-                {% if player.lifePoints < 0 %}
-                    <p class="text1_5">Vous êtes mort ..</p>
-                    <a class="text2" href="{{ path('homepage') }}">Rejouer</a>
-                {% else %}
-                    <p class="text1_5">Vous avez encore {{ player.lifePoints }} points de vie.</p>
+                    {% if player.lifePoints < 0 %}
+                        <p class="text3">Vous êtes mort ..</p>
+                        <a class="text4" href="{{ path('homepage') }}">Rejouer</a>
+                    {% else %}
+                        <p class="text3">Vous avez encore {{ player.lifePoints }} points de vie.</p>
+                    {% endif %}
                 {% endif %}
 
             {% endif %}
 
         {% endif %}
 
-        {% if player.lifePoints > 0 %}
+        {% if player.lifePoints > 0 and player.hasWin is not same as(true)%}
             {{ form(form) }}
         {% endif %}
     {% endif %}

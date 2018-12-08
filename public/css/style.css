@@ -65,7 +65,6 @@ a {
     letter-spacing: 1px;
     font-size: 1.8em;
     font-weight: bold;
-    width: 150px;
     padding: 20px;
     color: #ffff30;
     background-color: #00acd8;
@@ -76,11 +75,7 @@ a:hover {
 	background-color: #ffff30;
 }
 form select, form input {
-	font-family: 'Roboto', sans-serif;
-	color: #00acd8;
-	background-color: white;
-	border: none;
-	padding: 3px;
+	color: #00acd8 !important;
 }
 form select:focus, form input:focus {
 	outline: none;
@@ -89,7 +84,6 @@ button[type="submit"] {
 	display: flex;
 	justify-content: center;
 	margin: auto;
-	font-family: 'Roboto', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: bold;
@@ -104,62 +98,43 @@ button[type="submit"]:hover {
 	background-color: #ffff30;
 	border-color: inherit;
 }
-@media screen and (max-width: 300px) {
-	form select {
-		width: 100%;
-	}
-}
 /*------------------------------------*\
                 HEADER
 \*------------------------------------*/
-header {
+#header_title {
+	text-align: center;
+	font-family: 'action_jacksonregular', sans-serif;
+	font-size: 4rem;
 }
-	#header_title {
-		text-align: center;
-		font-family: 'action_jacksonregular', sans-serif;
-		font-size: 4rem;
-	}
-	#slogan	{
-		text-align: center;
-	    word-spacing: 5px;
-	    font-weight: bold;
-	    font-family: 'bebasregular',sans-serif;
-		margin-bottom: 2rem;
-	}
+#slogan	{
+	text-align: center;
+	word-spacing: 5px;
+	font-weight: bold;
+	font-family: 'bebasregular',sans-serif;
+	margin-bottom: 2rem;
+}
 /*------------------------------------*\
                 MAIN
 \*------------------------------------*/
 main {
 	background-color: #ffff30;
     color: #00acd8;
-    border: 3px solid;
     margin: auto;
     padding: 50px;
-}
-#bouton_jouer {
-	font-size: 1.8em;
-	font-weight: bold;
-	width: 150px;
-	padding: 20px;
-	color: #ffff30;
-	background-color: #00acd8;
-	border: 4px solid #00acd8;
-}
-#bouton_jouer:hover {
-	color: #00acd8;
-	background-color: #ffff30;
 }
 .form_title {
 	font-family: 'bebasregular',sans-serif;
 	font-size: 1.3rem;
 	letter-spacing: 2px;
 }
-.tour { font-size: 1.3em; }
-
+#tour { font-size: 1.3em; }
+.leave {
+	font-size: 1.5em;
+}
 /*------------------------------------*\
                 ANIMATIONS
 \*------------------------------------*/
-.text_animation {
+.text1 {
 			
 	opacity: 0;
 	-webkit-animation:fadein ease-in 1;  /* call keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
@@ -174,7 +149,7 @@ main {
 	-moz-animation-duration:1s;
 	animation-duration:1s;	
 }
-.text1 {
+.text2 {
 			
 	opacity: 0;
     -webkit-animation:fadein ease-in 1;  /* call keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
@@ -193,7 +168,7 @@ main {
     -moz-animation-delay:1s;
     animation-delay: 1s;
 }
-.text1_5 {
+.text3 {
 	opacity: 0;
     -webkit-animation:fadein ease-in 1;  /* call keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
 	-moz-animation:fadein ease-in 1;
@@ -211,7 +186,7 @@ main {
     -moz-animation-delay:2s;
     animation-delay: 2s;
 }
-.text2 {
+.text4 {
 	
 	opacity: 0;
 	-webkit-animation:fadein ease-in 1;  /* call keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
@@ -230,7 +205,7 @@ main {
     -moz-animation-delay:3s;
     animation-delay: 3s;
 }
-.text2_5 {
+.text5 {
 	
 	opacity: 0;
 	-webkit-animation:fadein ease-in 1;  /* call keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
@@ -249,7 +224,7 @@ main {
     -moz-animation-delay:4s;
     animation-delay: 4s;
 }
-.text3 {
+.text6 {
 
 	opacity: 0;
 	-webkit-animation:fadein ease-in 1;  /* call keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
@@ -268,7 +243,7 @@ main {
     -moz-animation-delay:5s;
     animation-delay: 5s;
 }
-.text4 {
+.text7 {
 	
 	opacity: 0;
 	-webkit-animation:fadein ease-in 1;  /* call keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
@@ -287,7 +262,7 @@ main {
     -moz-animation-delay: 7s;
     animation-delay: 7s;
 }
-.text5 {
+.text8 {
 
 	opacity: 0;
 	-webkit-animation:fadein ease-in 1;  /* call keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
@@ -306,7 +281,7 @@ main {
     -moz-animation-delay: 9s;
     animation-delay: 9s;
 }
-.text6 {
+.text9 {
 
 	opacity: 0;
 	-webkit-animation:fadein ease-in 1;  /* call keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
@@ -325,7 +300,7 @@ main {
     -moz-animation-delay: 11s;
     animation-delay: 11s;
 }
-.text7 {
+.text20 {
 
 	opacity: 0;
 	-webkit-animation:fadein ease-in 1;  /* call keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
@@ -344,7 +319,7 @@ main {
     -moz-animation-delay: 13s;
     animation-delay: 13s;
 }
-.text8 {
+.text21 {
 	
 	opacity: 0;
 	-webkit-animation:fadein ease-in 1;  /* call keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
@@ -363,7 +338,7 @@ main {
     -moz-animation-delay: 15s;
     animation-delay: 15s;
 }
-.text9 {
+.text22 {
 
 	opacity: 0;
 	-webkit-animation:fadein ease-in 1;  /* call keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
@@ -382,7 +357,7 @@ main {
     -moz-animation-delay: 17s;
     animation-delay: 17s;
 }
-.text10 {
+.text23 {
 
 	opacity: 0;
 	-webkit-animation:fadein ease-in 1;  /* call keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
@@ -401,7 +376,7 @@ main {
     -moz-animation-delay: 19s;
     animation-delay: 19s;
 }
-.text11 {
+.text24 {
 
 	opacity: 0;
 	-webkit-animation:fadein ease-in 1;  /* call keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
