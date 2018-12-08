@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="143a50c3-8bec-4a2e-b1f4-0fa59dcac893" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/domain/GameSystem.php" afterPath="$PROJECT_DIR$/domain/GameSystem.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/character/choose_name.html.twig" afterPath="$PROJECT_DIR$/templates/character/choose_name.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/character/confirm.html.twig" afterPath="$PROJECT_DIR$/templates/character/confirm.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/round/round.html.twig" afterPath="$PROJECT_DIR$/templates/round/round.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,16 +14,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PlayerController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/PlayerController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="32" column="61" lean-forward="false" selection-start-line="32" selection-start-column="61" selection-end-line="32" selection-end-column="61" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="GameSystem.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/domain/GameSystem.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -100,12 +87,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="432">
               <caret line="132" column="0" lean-forward="false" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="576">
+                <caret line="34" column="12" lean-forward="true" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -134,8 +134,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&quot;</find>
-      <find>-</find>
       <find>===</find>
       <find>name</find>
       <find>as</find>
@@ -164,6 +162,8 @@
       <find>text1</find>
       <find>text_animation</find>
       <find>bouton_jouer</find>
+      <find>oc_p6</find>
+      <find>oc_p8</find>
     </findStrings>
     <replaceStrings>
       <replace>enemy</replace>
@@ -240,6 +240,7 @@
         <option value="$PROJECT_DIR$/templates/character/confirm.html.twig" />
         <option value="$PROJECT_DIR$/templates/round/round.html.twig" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -253,7 +254,7 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="985" />
     <option name="y" value="25" />
-    <option name="width" value="935" />
+    <option name="width" value="1869" />
     <option name="height" value="1055" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -422,12 +423,12 @@
       <workItem from="1544051707846" duration="7257000" />
       <workItem from="1544184129057" duration="15257000" />
       <workItem from="1544265599316" duration="24439000" />
-      <workItem from="1544306311439" duration="2550000" />
+      <workItem from="1544306311439" duration="3120000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82139000" />
+    <option name="totallyTimeSpent" value="82709000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="25" width="1869" height="1055" extended-state="6" />
@@ -463,13 +464,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Entity/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/Archer.php" />
     <entry file="file://$PROJECT_DIR$/src/Entity/Thief.php" />
     <entry file="file://$PROJECT_DIR$/composer.json">
@@ -825,6 +819,17 @@
         <state relative-caret-position="432">
           <caret line="132" column="0" lean-forward="false" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="576">
+            <caret line="34" column="12" lean-forward="true" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
