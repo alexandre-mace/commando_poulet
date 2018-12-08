@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <div class="maintext">
+        <div class="flex-column-center">
+
+            <div class="poulet2_content">
+
+                <p class="text1">Ainsi débutent les aventures de {{ player.name }} le {{ player.role.name }}.</p>
+                    <p class="text2">Tout va pour le mieux dans les contrées lointaines de Caunette-sur-Lauquet.</p>
+                <p class="text3">Il est 10h du matin, vous mangez un croissant et buvez un jus d'orange dans le seul café de la ville.</p>
+                <p class="text4">Et tout d'un coup .......</p>
+                <p class="text5">5 poulets furieux prêts à en découdre sortent de la rue adjacente et se tiennent devant vous !</p>
+                <p class="text6">Effrayé :O, vous prenez vos jambes à votre cou et allez vous cacher au fond de la rue la plus proche...</p>
+                <p class="text7">Malheureusement, les poulets sont forts en sprint et vous rattrapent !</p>
+                <p class="text8">Mais, BONNE NOUVELLE, ils sont trop gros et ne tiennent qu'à un seul en largeur dans cette rue étriquée.</p>
+                <p class="text9">Il va falloir les battre un par un si vous voulez un jour revoir le visage de {{ player.lovingOne }}...</p>
+                <p class="text10 form_title">Etes-vous pret(e) a relever ce defi ?</p>
+                <div class="text10">
+                    {{ form(form) }}
+                </div>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}

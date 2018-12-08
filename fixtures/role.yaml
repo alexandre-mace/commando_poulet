@@ -1,0 +1,33 @@
+App\Entity\Role:
+    role_1:
+        name: 'Mage'
+        lifePoints: 1500
+        damage: 300
+        attackNames:
+            - "Vous lancez une boule de feu !"
+            - "Vous lancez une boule de glace !"
+            - "Vous lancez une boule de roche !"
+    role_2:
+        name: 'Guerrier'
+        lifePoints: 4500
+        damage: 100
+        attackNames:
+            - "Vous donnez un coup violent avec votre épée !"
+            - "Vous tournez sur vous même et votre épée découpe l'ennemi !"
+            - "Vous donnez un coup de boule avec votre casque !"
+    role_3:
+        name: 'Voleur'
+        lifePoints: 1000
+        damage: 400
+        attackNames:
+            - "Vous donnez un coup tranchant avec votre couteau"
+            - "Vous lancez votre couteau sur l'ennemi"
+            - "Vous disparaissez dans les ombres et attaquez l'ennemi par derriere !"
+    role_4:
+        name: 'Archer'
+        lifePoints: 2000
+        damage: 200
+        attackNames:
+            - "Vous lancez une flèche tranchante !"
+            - "Vous lancez une flèche de feu !"
+            - "Vous lancez une flèche empoisonnée !"

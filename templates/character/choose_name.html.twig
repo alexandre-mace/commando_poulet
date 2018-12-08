@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <p class="text_animation">Vous avez choisi le {{ player.role.name }}, très bon choix.</p>
+    <p class="text1">Ainsi débutent les aventures de Jean-Claude le {{ player.role.name }}.</p>
+    <p class="text2">Comment ??</p>
+    <p class="text3">Vous ne vous appelez pas Jean-Claude ??</p>
+    <p class="text4">Mais alors comment vous appelez-vous ?!</p>
+    <section class="text5">
+        <h3 class="form_title">Veuillez choisir votre nom</h3>
+        {{ form(form) }}
+    </section>
+{% endblock %}

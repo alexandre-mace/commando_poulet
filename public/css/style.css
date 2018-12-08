@@ -1,0 +1,451 @@
+/*------------------------------------*\
+                FONTS
+\*------------------------------------*/
+@font-face {
+    font-family: 'action_jacksonregular';
+    src: url('../font/actionj/actionj-webfont.woff2') format('woff2'),
+         url('../font/actionj/actionj-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'bebasregular';
+    src: url('../font/bebas_regular_macroman/BEBAS___-webfont.eot');
+    src: url('../font/bebas_regular_macroman/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/bebas_regular_macroman/BEBAS___-webfont.woff') format('woff'),
+         url('../font/bebas_regular_macroman/BEBAS___-webfont.ttf') format('truetype'),
+         url('../font/bebas_regular_macroman/BEBAS___-webfont.svg#bebasregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*------------------------------------*\
+                HELPER
+\*------------------------------------*/
+
+.d-flex {
+	display: flex;
+}
+.flex-column {
+	flex-direction: column;
+}
+.flex-center {
+	display: flex;
+	justify-content: center;
+}
+.flex-column-between {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.flex-column-center {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.margin-bottom-30 {
+	margin-bottom: 30px;
+}
+/*------------------------------------*\
+                GENERAL
+\*------------------------------------*/
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #00acd8;
+	margin: 0;
+    display: flex;
+    min-height: 100vh;
+}
+a {
+	text-decoration: none !important;
+	display: flex;
+    justify-content: center;
+    margin: auto;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.8em;
+    font-weight: bold;
+    width: 150px;
+    padding: 20px;
+    color: #ffff30;
+    background-color: #00acd8;
+    border: 4px solid #00acd8;
+}
+a:hover {
+	color: #00acd8;
+	background-color: #ffff30;
+}
+form select, form input {
+	font-family: 'Roboto', sans-serif;
+	color: #00acd8;
+	background-color: white;
+	border: none;
+	padding: 3px;
+}
+form select:focus, form input:focus {
+	outline: none;
+}
+button[type="submit"] {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+	padding: 20px;
+	color: #ffff30;
+	background-color: #00acd8;
+	border: 2px solid #00acd8;
+	border-radius: unset;
+}
+button[type="submit"]:hover {
+	color: #00acd8;
+	background-color: #ffff30;
+	border-color: inherit;
+}
+@media screen and (max-width: 300px) {
+	form select {
+		width: 100%;
+	}
+}
+/*------------------------------------*\
+                HEADER
+\*------------------------------------*/
+header {
+}
+	#header_title {
+		text-align: center;
+		font-family: 'action_jacksonregular', sans-serif;
+		font-size: 4rem;
+	}
+	#slogan	{
+		text-align: center;
+	    word-spacing: 5px;
+	    font-weight: bold;
+	    font-family: 'bebasregular',sans-serif;
+		margin-bottom: 2rem;
+	}
+/*------------------------------------*\
+                MAIN
+\*------------------------------------*/
+main {
+	background-color: #ffff30;
+    color: #00acd8;
+    border: 3px solid;
+    margin: auto;
+    padding: 50px;
+}
+#bouton_jouer {
+	font-size: 1.8em;
+	font-weight: bold;
+	width: 150px;
+	padding: 20px;
+	color: #ffff30;
+	background-color: #00acd8;
+	border: 4px solid #00acd8;
+}
+#bouton_jouer:hover {
+	color: #00acd8;
+	background-color: #ffff30;
+}
+.form_title {
+	font-family: 'bebasregular',sans-serif;
+	font-size: 1.3rem;
+	letter-spacing: 2px;
+}
+.tour { font-size: 1.3em; }
+
+/*------------------------------------*\
+                ANIMATIONS
+\*------------------------------------*/
+.text_animation {
+			
+	opacity: 0;
+	-webkit-animation:fadein ease-in 1;  /* call keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadein ease-in 1;
+	animation:fadein ease-in 1;
+	 
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+ 	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;	
+}
+.text1 {
+			
+	opacity: 0;
+    -webkit-animation:fadein ease-in 1;  /* call keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadein ease-in 1;
+	animation:fadein ease-in 1;
+	 
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+ 	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+
+	-webkit-animation-delay: 1s;
+    -moz-animation-delay:1s;
+    animation-delay: 1s;
+}
+.text1_5 {
+	opacity: 0;
+    -webkit-animation:fadein ease-in 1;  /* call keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadein ease-in 1;
+	animation:fadein ease-in 1;
+	 
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+ 	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+
+	-webkit-animation-delay: 2s;
+    -moz-animation-delay:2s;
+    animation-delay: 2s;
+}
+.text2 {
+	
+	opacity: 0;
+	-webkit-animation:fadein ease-in 1;  /* call keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadein ease-in 1;
+	animation:fadein ease-in 1;
+	 
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+ 	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+
+	-webkit-animation-delay: 3s;
+    -moz-animation-delay:3s;
+    animation-delay: 3s;
+}
+.text2_5 {
+	
+	opacity: 0;
+	-webkit-animation:fadein ease-in 1;  /* call keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadein ease-in 1;
+	animation:fadein ease-in 1;
+	 
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+ 	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+
+	-webkit-animation-delay: 4s;
+    -moz-animation-delay:4s;
+    animation-delay: 4s;
+}
+.text3 {
+
+	opacity: 0;
+	-webkit-animation:fadein ease-in 1;  /* call keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadein ease-in 1;
+	animation:fadein ease-in 1;
+	 
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+ 	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+
+	-webkit-animation-delay: 5s;
+    -moz-animation-delay:5s;
+    animation-delay: 5s;
+}
+.text4 {
+	
+	opacity: 0;
+	-webkit-animation:fadein ease-in 1;  /* call keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadein ease-in 1;
+	animation:fadein ease-in 1;
+	 
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+ 	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+
+	-webkit-animation-delay: 7s;
+    -moz-animation-delay: 7s;
+    animation-delay: 7s;
+}
+.text5 {
+
+	opacity: 0;
+	-webkit-animation:fadein ease-in 1;  /* call keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadein ease-in 1;
+	animation:fadein ease-in 1;
+	 
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+ 	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+
+	-webkit-animation-delay: 9s;
+    -moz-animation-delay: 9s;
+    animation-delay: 9s;
+}
+.text6 {
+
+	opacity: 0;
+	-webkit-animation:fadein ease-in 1;  /* call keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadein ease-in 1;
+	animation:fadein ease-in 1;
+	 
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+ 	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+
+	-webkit-animation-delay: 11s;
+    -moz-animation-delay: 11s;
+    animation-delay: 11s;
+}
+.text7 {
+
+	opacity: 0;
+	-webkit-animation:fadein ease-in 1;  /* call keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadein ease-in 1;
+	animation:fadein ease-in 1;
+	 
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+ 	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+
+	-webkit-animation-delay: 13s;
+    -moz-animation-delay: 13s;
+    animation-delay: 13s;
+}
+.text8 {
+	
+	opacity: 0;
+	-webkit-animation:fadein ease-in 1;  /* call keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadein ease-in 1;
+	animation:fadein ease-in 1;
+	 
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+ 	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+
+	-webkit-animation-delay: 15s;
+    -moz-animation-delay: 15s;
+    animation-delay: 15s;
+}
+.text9 {
+
+	opacity: 0;
+	-webkit-animation:fadein ease-in 1;  /* call keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadein ease-in 1;
+	animation:fadein ease-in 1;
+	 
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+ 	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+
+	-webkit-animation-delay: 17s;
+    -moz-animation-delay: 17s;
+    animation-delay: 17s;
+}
+.text10 {
+
+	opacity: 0;
+	-webkit-animation:fadein ease-in 1;  /* call keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadein ease-in 1;
+	animation:fadein ease-in 1;
+	 
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+ 	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+
+	-webkit-animation-delay: 19s;
+    -moz-animation-delay: 19s;
+    animation-delay: 19s;
+}
+.text11 {
+
+	opacity: 0;
+	-webkit-animation:fadein ease-in 1;  /* call keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadein ease-in 1;
+	animation:fadein ease-in 1;
+	 
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+ 	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+
+	-webkit-animation-delay: 21s;
+    -moz-animation-delay: 21s;
+    animation-delay: 21s;
+}
+
+	@keyframes fadein {
+	    from { opacity: 0; }
+	    to   { opacity: 1; }
+	}
+
+	/* Firefox < 16 */
+	@-moz-keyframes fadein {
+	    from { opacity: 0; }
+	    to   { opacity: 1; }
+	}
+
+	/* Safari, Chrome and Opera > 12.1 */
+	@-webkit-keyframes fadein {
+	    from { opacity: 0; }
+	    to   { opacity: 1; }
+	}
+
+	/* Internet Explorer */
+	@-ms-keyframes fadein {
+	    from { opacity: 0; }
+	    to   { opacity: 1; }
+	}
+
+	/* Opera < 12.1 */
+	@-o-keyframes fadein {
+	    from { opacity: 0; }
+	    to   { opacity: 1; }
+	}
