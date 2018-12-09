@@ -22,7 +22,7 @@ class RoundController extends AbstractController
     /**
      * @Route("/round/{id}", name="round")
      */
-    public function round(Player $player, Request $request, RoundHandler $handler, SessionInterface $session)
+    public function round(Player $player, Request $request, RoundHandler $handler)
     {
         $form = $this->createForm(RoundType::class, $player)->handleRequest($request);
         if ($handler->handle($form)) {
