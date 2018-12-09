@@ -1,5 +1,7 @@
 # Commando Poulet
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/0df64f6663304345b88569ba8711b572)](https://app.codacy.com/app/codacy_alexandre-mace/commando_poulet?utm_source=github.com&utm_medium=referral&utm_content=alexandre-mace/commando_poulet&utm_campaign=Badge_Grade_Dashboard)
+
 Turn-based strategy game made with Symfony 4 flex for fun
 
 ## Requirements 
